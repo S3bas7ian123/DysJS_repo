@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgBody: rgb(255, 208, 0.5);
+    --colorH1: rgb(255, 208, 0.10);
+}
+
+/* Reset css */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-color: var(--bgBody);
+}
+
+/* Class titles */
+.h1 {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    color: var(--colorH1);
+}
