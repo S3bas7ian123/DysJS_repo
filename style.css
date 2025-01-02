@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
+/* General Settings: */
 * {
     height: 100%;
     margin: 0;
@@ -8,8 +9,13 @@
 }
 
 :root {
-    --bgBody: rgb(255, 208, 0.5);
-    --colorH1: rgb(255, 208, 0.10);
+    /* Semantics tags - settings */
+    --bgBody: rgb(255, 208, 0.5); /* body */
+    --bgHead: rgb(0, 0, 0); /* header */
+    --sectBg: rgb(78, 78, 78);/* section */ 
+    /* Not-sematics tags - settings: */
+    --colorH1: rgb(255, 208, 0.10); /* h1 */
+    --textColor: rgb(255, 228, 106); /* p */
 }
 
 /* Reset css */
@@ -18,14 +24,28 @@ html, body {
     padding: 0;
 }
 
-/* Body styles */
 body {
     background-color: var(--bgBody);
 }
 
-/* Class titles */
+.header {
+    padding: 15px;
+    background-color: var(--bgHead);
+    max-height: 70px;
+    text-align: center;
+}
+
 .h1 {
     font-family: "Inter", serif;
     font-weight: 500;
     color: var(--colorH1);
+}
+
+.section {
+    background-color: var(--sectBg);
+    color: var(--textColor);
+    border-radius: 8px;
+    margin: 15px;
+    padding: 10px;
+    max-height: 300px;
 }
