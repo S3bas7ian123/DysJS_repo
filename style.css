@@ -6,46 +6,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+};
 
 :root {
     /* Semantics tags - settings */
     --bgBody: rgb(255, 208, 0.5); /* body */
-    --bgHead: rgb(0, 0, 0); /* header */
-    --sectBg: rgb(78, 78, 78);/* section */ 
+    --bgCompSem: rgb(0, 0, 0); 
     /* Not-sematics tags - settings: */
     --colorH1: rgb(255, 208, 0.10); /* h1 */
     --textColor: rgb(255, 228, 106); /* p */
-}
+};
 
 /* Reset css */
 html, body {
     margin: 0;
     padding: 0;
-}
+};
 
 body {
     background-color: var(--bgBody);
-}
+    font-family: "Oswald", serif;
+};
 
 .header {
     padding: 15px;
-    background-color: var(--bgHead);
+    background-color: var(--bgCompSem);
     max-height: 70px;
     text-align: center;
-}
+};
 
 .h1 {
     font-family: "Inter", serif;
     font-weight: 500;
     color: var(--colorH1);
+};
+
+.aside {
+    background-color: var(--bgCompSem);
+    max-width: 100px;
+    border-radius: 0 0 0 8px;
 }
 
 .section {
-    background-color: var(--sectBg);
+    background-color: var(--bgCompSem);
     color: var(--textColor);
     border-radius: 8px;
-    margin: 15px;
+    margin: 20px;
     padding: 10px;
     max-height: 300px;
-}
+};

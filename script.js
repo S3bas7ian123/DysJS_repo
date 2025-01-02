@@ -9,6 +9,19 @@ function headComponents() {
     head.classList.add('header');
 };
 
+// Aside: 
+// function asideComp() {
+//     const asIde = document.querySelector('aside');
+//     const navBar = document.createElement('nav');
+//     const uList = document.createElement('ul');
+//     const li = document.createElement('li');
+
+//     /* special node: 'Document Fragment' */
+
+
+//     console.log(asIde, navBar, uList, li);
+// }
+
 // Section: (function expression)
 const sectComp = () => {
     const sect = document.querySelector('section');
@@ -16,12 +29,11 @@ const sectComp = () => {
 
     contDivSect.innerHTML = `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`
     sect.append(contDivSect);
-    sect.classList.add('section');
-
-    console.log(sect, contDivSect);   
+    sect.classList.add('section');   
 };
 
 headComponents();
+asideComp();
 sectComp();
 
 
